@@ -5,7 +5,7 @@ author:      'Ramneek Narayan' #change to your name, e.g. bill stevens
 description: "a site about relaxing 101, how to do it well so you can do better later."
 url:         "https://writerthethinker1.github.io" #change the url to
 # your 'https://github_username.github.io'
-baseurl:     "/relax_write/" #change the base url to your class title (name of git repo), e.g. /relax_101/ or /math123/
+baseurl:     "/Official-Theranos/" #change the base url to your class title (name of git repo), e.g. /relax_101/ or /math123/
 
 
 date_format: "%b %-d, %Y"
