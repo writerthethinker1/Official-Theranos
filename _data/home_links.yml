@@ -3,8 +3,8 @@ structure:
 
 # note don't prepend {{ site.baseurl }} as it makes links not work
 
-- title: 'Materials'
-  url: 'materials/'
+- title: 'TheranoXii'
+  url: 'TheranoXii/'
 
 - title: 'Tags'
   url: 'tags/'
@@ -12,5 +12,5 @@ structure:
 - title: 'About'
   url: 'about/'
 
-- title: 'Mail'
+- title: 'Contact'
   url: 'contact/'

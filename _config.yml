@@ -1,8 +1,8 @@
 # Site settings
-title:       "Sample Course" #the title of your course
-email:       ramneeknarayan@gmail.com #your personal email for contact, edit as you wish
-author:      'Ramneek Narayan' #change to your name, e.g. bill stevens
-description: "a site about relaxing 101, how to do it well so you can do better later."
+title:       "Theranos (Official)" #the title of your course
+email:       ramneeknarayan0@icloud.com #your personal email for contact, edit as you wish
+author:      'Elizabeth Holmes & Ramneek Narayan' #change to your name, e.g. bill stevens
+description: "The offical site for Theranos"
 url:         "https://writerthethinker1.github.io" #change the url to
 # your 'https://github_username.github.io'
 baseurl:     "/Official-Theranos/" #change the base url to your class title (name of git repo), e.g. /relax_101/ or /math123/
@@ -12,31 +12,8 @@ date_format: "%b %-d, %Y"
 
 # easy links to reference them in any post or article, just use [name of link]({{ site.[link] | relative_url }})
 
-images: 'images' #feel free to add custom image paths, like images/stats, images/discussion_things, images/coding, images/finals, images/your_scores/midterm1, images/practice_problems and so on...
+Theranos-images: 'Theranos-images' #feel free to add custom image paths, like images/stats, images/discussion_things, images/coding, images/finals, images/your_scores/midterm1, images/practice_problems and so on...
 # had to rename or append _link at the end of the names to make sure the entire collection wasn't referenced...
-
-# in the ./materials/course_files/ folder...
-syllabus: 'materials/course_files/syllabus'
-calm_down: 'materials/course_files/calm_down'
-notes: 'materials/course_files/notes'
-discussion_link: 'materials/course_files/discussions'
-musings_link: 'materials/course_files/musings'
-practice_link: 'materials/course_files/practice'
-your_scores_link: 'materials/course_files/your_scores'
-
-# in the ./materials/course_files/notes folder...
-articles: 'materials/course_files/notes/articles'
-books: 'materials/course_files/notes/books'
-coding: "materials/course_files/notes/coding"
-discussion_stuff: "materials/course_files/notes/discussion_stuff"
-exam_solutions: 'materials/course_files/notes/exam_solutions'
-extra_things: 'materials/course_files/notes/extra_things'
-labs: 'materials/course_files/notes/labs'
-practice_solutions: 'materials/course_files/notes/practice_solutions'
-quiz_solutions: 'materials/course_files/notes/quiz_solutions'
-study_guides: 'materials/course_files/notes/study_guides'
-week_notes: 'materials/course_files/notes/week_notes'
-
 
 # # Google services
 # google_verification:
@@ -60,65 +37,59 @@ week_notes: 'materials/course_files/notes/week_notes'
 # post_preview_image: false
 
 collections:
-  practice:
+  Theranos-practice:
     output: true
-  discussions:
+  Theranos-discussions:
     output: true
-  markdown_notes:
+  Theranos-markdown_notes:
     output: true
-  musings:
-    output: true
-  your_scores:
+  Theranos-musings:
     output: true
 
-# for static files (things like articles, books, extra_things, week_notes)
+# for static files (things like articles, books, extra_things, week_Theranos_notes)
 
 #if you don't want any folders or don't use them, comment out them here!, you can also make your own static file collections too.
 defaults:
   - scope:
-      path: "notes_upload/books"
+      path: "Theranos-notes_upload/Theranos-books"
     values:
-      book: true #all files in the books folder have the 'book' frontmatter as true, as if
+      Theranos-book: true #all files in the books folder have the 'book' frontmatter as true, as if
   - scope:
-      path: "notes_upload/articles"
+      path: "Theranos-notes_upload/Theranos-articles"
     values:
-      article: true
+      Theranos-article: true
   - scope:
-      path: "notes_upload/extra_things"
+      path: "Theranos-notes_upload/Theranos-extras"
     values:
-      extra: true
+      Theranos-extra: true
   - scope:
-      path: "notes_upload/week_notes"
+      path: "Theranos-notes_upload/Theranos-notes"
     values:
-      week_notes: true
+      Theranos-notes: true
   - scope:
-      path: "notes_upload/discussion_stuff"
+      path: "Theranos-notes_upload/Theranos-discussion_stuff"
     values:
-      discussion_stuff: true
+      Theranos-discussion_stuff: true
   - scope:
-      path: "notes_upload/exam_solutions"
+      path: "Theranos-notes_upload/Theranos-exam_solutions"
     values:
-      exam_solutions: true
+      Theranos-exam_solutions: true
   - scope:
-      path: "notes_upload/practice_solutions"
+      path: "Theranos-notes_upload/Theranos-practice_solutions"
     values:
-      practice_solutions: true
+      Theranos-practice_solutions: true
   - scope:
-      path: "notes_upload/study_guides"
+      path: "Theranos-notes_upload/Theranos-study_guides"
     values:
-      study_guides: true
+      Theranos-study_guides: true
   - scope:
-      path: "notes_upload/labs"
+      path: "Theranos-notes_upload/Theranos-labs"
     values:
-      labs: true
+      Theranos-labs: true
   - scope:
-      path: "notes_upload/coding"
+      path: "Theranos-notes_upload/Theranos-coding"
     values:
-      coding: true
-  - scope:
-      path: "notes_upload/quiz_solutions"
-    values:
-      quiz_solutions: true
+      Theranos-coding: true
 
 
 # Facebook Page integration

@@ -9,57 +9,47 @@ structure:
 
 # the order you put things is the order it appears...
 
-- title: 'Weekly Notes'
-  reference: 'week_notes'
-  url: 'week_notes'
+- title: 'Notes (Theranos)'
+  reference: 'Theranos-notes'
+  url: 'Theranos-notes'
   show: true
 
-- title: 'Discussion Solutions/Handouts'
-  reference: 'discussion_stuff'
-  url: 'discussion_stuff'
+- title: 'Solutions (Theranos)'
+  reference: 'Theranos-solutions'
+  url: 'Theranos-solutions'
   show: true
 
-- title: 'Practice Problem Solutions'
-  reference: 'practice_solutions'
-  url: 'practice_solutions'
+- title: 'Exam Solutions (Theranos)'
+  reference: 'Theranos-exam_solutions'
+  url: 'Theranos-exam_solutions'
   show: true
 
-- title: "Quiz Solutions"
-  reference: "quiz_solutions"
-  url: "quiz_solutions"
+- title: 'Study Guides (Theranos)'
+  reference: 'Theranos-study_guides'
+  url: 'Theranos-study_guides'
   show: true
 
-- title: 'Exam Solutions'
-  reference: 'exam_solutions'
-  url: 'exam_solutions'
+- title: 'Labs (Theranos)'
+  reference: 'Theranos-labs'
+  url: 'Theranos-labs'
   show: true
 
-- title: 'Study Guides'
-  reference: 'study_guides'
-  url: 'study_guides'
+- title: 'Coding (Theranos)'
+  reference: 'Theranos-coding'
+  url: 'Theranos-coding'
   show: true
 
-- title: 'Labs'
-  reference: 'labs'
-  url: 'labs'
+- title: 'Books (Theranos)'
+  url: 'Theranos-books'
+  reference: 'Theranos-book'
   show: true
 
-- title: 'Code/Coding'
-  reference: 'coding'
-  url: 'coding'
+- title: 'Articles (Theranos)'
+  url: 'Theranos-articles'
+  reference: 'Theranos-article'
   show: true
 
-- title: 'Books'
-  url: 'books'
-  reference: 'book'
-  show: true
-
-- title: 'Articles'
-  url: 'articles'
-  reference: 'article'
-  show: true
-
-- title: 'Extra Things'
-  url: 'extra_things'
-  reference: 'extra'
+- title: 'Extras (Theranos)'
+  url: 'Theranos-extras'
+  reference: 'Theranos-extras'
   show: true
