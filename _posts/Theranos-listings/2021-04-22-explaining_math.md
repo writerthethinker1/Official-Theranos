@@ -14,7 +14,7 @@ Just some ways to make math easier to explain and show others as well. This page
 
 Sometimes when an equation is complex and difficult to explain, adding custom colors via the `colors` feature in mathjax helps. It's easy to color math with the `\color{..}{..}` or `{\color{..} text}` macro providing the color and the expression to color. Note that `{\color{..} text}` is a safer method that doesn't allow for colors to be put outside of the braces for operators like addition and subtraction. The standard colors, like `green`, `blue`, `orange`, `yellow`, and so on are there. To save you time and energy, the basic colors `orange, blue, brown, green, pink, purple, red, gray, and black` have all been made macros, so to write anything in orange with in math mode, just type `\orange{..}` and it will appear so. Same with all the other colors. Additional ones without macros are given below:
 
-![mathjax colors]({{ site.images | relative_url }}/colours/mathjax_colors.jpg)
+![mathjax colors]({{ site.Theranos-images | relative_url }}/colours/mathjax_colors.jpg)
 
 
 We can make $\color{BurntOrange}{x^2}$ from `\color{BurntOrange}{x^2}`. For example, were one to have something like
