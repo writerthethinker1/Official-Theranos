@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practice 1 &#8211; Sample Course</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="a site about relaxing 101, how to do it well so you can do better later.">
+    <meta name="robots" content="all">
+    <meta name="author" content="Ramneek Narayan">
+    <!--  -->
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:4000/relax_write/your_scores/practice1/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sample Course" href="/relax_write/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/relax_write/css/pixyll.css?202206152259" type="text/css">
+
+    <!-- Fonts -->
+    <!--  -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    <!--  -->
+    <!--  -->
+
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/relax_write//favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/relax_write//favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/relax_write//favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/relax_write//favicon_io/site.webmanifest">
+
+    <!-- Verifications -->
+    <!-- 
+     -->
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <!-- <meta property="og:locale" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Practice 1">
+    <meta property="og:description" content="a site about relaxing 101, how to do it well so you can do better later.">
+    <meta property="og:url" content="http://localhost:4000/your_scores/practice1/">
+    <meta property="og:site_name" content="Sample Course">
+     -->
+
+    <!-- Twitter Card -->
+    <!-- <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:title" content="Practice 1" />
+    <meta name="twitter:description" content="a site about relaxing 101, how to do it well so you can do better later." />
+    <meta name="twitter:url" content="http://localhost:4000/your_scores/practice1/" />
+     -->
+
+    <!--  -->
+</head>
+
+<body class="site">
+  
+	
+
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000//relax_write/" class="site-title" style="font-size:28px">Sample Course</a>
+
+      <!-- <div style="margin-left:40%; margin-bottom:-40%">title</div> -->
+
+      <nav class="site-nav">
+        <!-- all the links for the top right of the homepage -->
+
+
+<!-- check the home_links.yml to add more if you'd like... -->
+
+
+  <a href="/relax_write//materials/" style="font-size:18px">Materials</a>
+
+  <a href="/relax_write//tags/" style="font-size:18px">Tags</a>
+
+  <a href="/relax_write//about/" style="font-size:18px">About</a>
+
+  <a href="/relax_write//contact/" style="font-size:18px">Mail</a>
+
+
+        <!-- this navigation.html has al the links for your endeavour -->
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <!-- 
+ -->
+
+<div class="post-header mb2">
+  <h1>Practice 1</h1>
+  <span class="post-meta">Mar 1, 2021</span>
+  
+  <span>
+  
+    
+    </span>
+  <span class="post-meta small">
+  <!-- 
+    2 
+   -->
+  </span>
+</div>
+<article class="post-content">
+  <div>
+    <span>
+    
+
+  <p>Overall the first set of practice problems went great! The first problem had many intuitive guesses as well as other features that were new. The sets are graded online on some grading platform so you can check them at your leisure.</p>
+
+<hr />
+
+<p><strong>If you haven’t yet made an account, please do so!!! It’s the only way you can check for your errors! See us if you’re stuck, we’re more than happy to help.</strong></p>
+
+<hr />
+
+<p>They’ve all been graded and sent over to you guys if you have accounts. You guys have your copies of what you sent, so you can mark them up and see where some whoopsie’s were made. The most common mistakes were…</p>
+
+<h2 id="confusing-transpose-with-other-operation">Confusing Transpose with other Operation</h2>
+
+<p>There were a few of you guys who instead of taking a transpose, decided to take some other operation of the matrix you made. So, something like</p>
+
+\[M = \pmatrix{2 &amp; 3 \\ 3 &amp; 2} \implies M' = \pmatrix{2 &amp; 3 \\ 3 &amp; 2}\]
+
+<p>Is a valid answer, but sometimes people flipped the first two rows, giving</p>
+
+\[M^\ast = \pmatrix{3 &amp; 2 \\ 2 &amp; 3}\]
+
+<p>which isn’t the definition of a transpose. Just a slight error, nothing too much.</p>
+
+<h2 id="null-and-initial-hypothesis-distributions">Null and Initial Hypothesis, Distributions</h2>
+
+<p>This one was a bit sketchy for me too after seeing some of your answers. Originally, I thought maybe a uniform distribution of the amount in the bottles would be present prior to data collection, maybe knowing factory standards gives the bounds: $U(30L, 50L)$ for each bottle. Generally, as the student collected more and more data, this distribution was updated to be more and more dense toward, maybe 39L, keeping the entropy the same. Maybe $X\vert\text{collection} \sim U(30L, 40L)$, which is better than when we didn’t measure.</p>
+
+<p>But, equally valid was a normal for the ‘true’ amount or $X_{\text{bottle}} \sim N(\mu, \sigma^2)$, if you see it that way. Just a note on hypotheses,</p>
+
+<p><em>We can only find evidence against our initial assumptions (the null or $H_0$)</em></p>
+
+<p>It would be weird for us to say we have evidence for something, because it implies <em>knowledge</em>, which we never have in a statistical setting. We only have evidence for or against, never true knowledge. So, the claim that the bottles are different in CO2 gas might be something alternative. Something initial to our minds might be that the factory is uniform in CO2 gas rates because that’s how we intended things to be! And we can find evidence against it. The null usually has the least entropy.</p>
+
+<p><em>If you’re stuck, try to think what might be initial to our minds based on the setting?</em></p>
+
+<p>That might give hints. I had this problem too wayyyy back in 2014-15, I flipped them often. Don’t worry if you can’t do this bit first, as long as you can do the statistical tests, you’ll see later what the hypotheses are: the evidence points to it!</p>
+
+<p>Anyway, that’s it for the practice solutions overview of completion. Good work!</p>
+
+<p>(just an illustration).</p>
+
+  </span>
+  </div>
+</article>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+ -->
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">GitHub</a>. <br>
+      Slightly redone by <a href="https://github.com/writerthethinker1">writerthethinker1</a>. Enjoy!
+    </small>
+  </div>
+</footer>
+<!--  -->
+
+</body>
+
+<!--math support-->
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   extensions: ["tex2jax.js", "[Contrib]/mhchem/mhchem.js", "[Contrib]/physics/physics.js", "[Contrib]/siunitx/siunitx.js", "[MathJax]/extensions/TeX/cancel.js", "[MathJax]/extensions/TeX/color.js", "https://writerthethinker1.github.io/relax_write/mathjax/stats.js"],
+   tex2jax: {
+     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+     displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+     processEscapes: true
+   },
+   CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+   SVG: { linebreaks: { automatic: true } },
+   TeX: { equationNumbers: { autoNumber: "AMS" },
+           Macros: { //any extra here...
+                      }}
+ });
+</script>
+<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</html>

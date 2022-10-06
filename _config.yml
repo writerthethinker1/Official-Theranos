@@ -1,0 +1,219 @@
+# Site settings
+title:       "Sample Course" #the title of your course
+email:       ramneeknarayan@gmail.com #your personal email for contact, edit as you wish
+author:      'Ramneek Narayan' #change to your name, e.g. bill stevens
+description: "a site about relaxing 101, how to do it well so you can do better later."
+url:         "https://writerthethinker1.github.io" #change the url to
+# your 'https://github_username.github.io'
+baseurl:     "/relax_write/" #change the base url to your class title (name of git repo), e.g. /relax_101/ or /math123/
+
+
+date_format: "%b %-d, %Y"
+
+# easy links to reference them in any post or article, just use [name of link]({{ site.[link] | relative_url }})
+
+images: 'images' #feel free to add custom image paths, like images/stats, images/discussion_things, images/coding, images/finals, images/your_scores/midterm1, images/practice_problems and so on...
+# had to rename or append _link at the end of the names to make sure the entire collection wasn't referenced...
+
+# in the ./materials/course_files/ folder...
+syllabus: 'materials/course_files/syllabus'
+calm_down: 'materials/course_files/calm_down'
+notes: 'materials/course_files/notes'
+discussion_link: 'materials/course_files/discussions'
+musings_link: 'materials/course_files/musings'
+practice_link: 'materials/course_files/practice'
+your_scores_link: 'materials/course_files/your_scores'
+
+# in the ./materials/course_files/notes folder...
+articles: 'materials/course_files/notes/articles'
+books: 'materials/course_files/notes/books'
+coding: "materials/course_files/notes/coding"
+discussion_stuff: "materials/course_files/notes/discussion_stuff"
+exam_solutions: 'materials/course_files/notes/exam_solutions'
+extra_things: 'materials/course_files/notes/extra_things'
+labs: 'materials/course_files/notes/labs'
+practice_solutions: 'materials/course_files/notes/practice_solutions'
+quiz_solutions: 'materials/course_files/notes/quiz_solutions'
+study_guides: 'materials/course_files/notes/study_guides'
+week_notes: 'materials/course_files/notes/week_notes'
+
+
+# # Google services
+# google_verification:
+# # Use either direct GA implementation or set up GTM account
+# # - using both will skew your data (leave blank to not use at all)
+# google_analytics:
+# google_tag_manager:
+# # Bing services
+# bing_verification:
+
+# # Optional features
+# animated:             false
+# show_related_posts:   false
+# show_post_footers:    false
+# show_social_icons:    false
+# ajaxify_contact_form: false
+# #enable_mathjax: true
+# extended_fonts: false
+# enable_anchorjs: false
+# # Preview image for social media aka og:image and twitter:image
+# post_preview_image: false
+
+collections:
+  practice:
+    output: true
+  discussions:
+    output: true
+  markdown_notes:
+    output: true
+  musings:
+    output: true
+  your_scores:
+    output: true
+
+# for static files (things like articles, books, extra_things, week_notes)
+
+#if you don't want any folders or don't use them, comment out them here!, you can also make your own static file collections too.
+defaults:
+  - scope:
+      path: "notes_upload/books"
+    values:
+      book: true #all files in the books folder have the 'book' frontmatter as true, as if
+  - scope:
+      path: "notes_upload/articles"
+    values:
+      article: true
+  - scope:
+      path: "notes_upload/extra_things"
+    values:
+      extra: true
+  - scope:
+      path: "notes_upload/week_notes"
+    values:
+      week_notes: true
+  - scope:
+      path: "notes_upload/discussion_stuff"
+    values:
+      discussion_stuff: true
+  - scope:
+      path: "notes_upload/exam_solutions"
+    values:
+      exam_solutions: true
+  - scope:
+      path: "notes_upload/practice_solutions"
+    values:
+      practice_solutions: true
+  - scope:
+      path: "notes_upload/study_guides"
+    values:
+      study_guides: true
+  - scope:
+      path: "notes_upload/labs"
+    values:
+      labs: true
+  - scope:
+      path: "notes_upload/coding"
+    values:
+      coding: true
+  - scope:
+      path: "notes_upload/quiz_solutions"
+    values:
+      quiz_solutions: true
+
+
+# Facebook Page integration
+# (for instant articles and other stuff)
+#fb_page: false
+#fb_page_id:
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+#disqus_shortname:
+
+# Facebook Comments plugin
+# (leave blank to disable Facebook Comments, otherwise set it to true)
+#facebook_comments:
+#facebook_appid:
+#facebook_comments_number: 10
+
+# Social icons
+#github_username:
+#reddit_username:
+#bitbucket_username:
+#stackoverflow_id:
+#twitter_username:
+#skype_username:
+#steam_nickname:
+#google_plus_id:
+#linkedin_username:
+#angellist_username:
+#medium_id:
+#bitcoin_url:
+#paypal_url:
+#flattr_button:
+#telegram_username:
+#vk_id:
+
+# Post sharing icons
+#show_sharing_icons: false
+# Change to 'true' to enable individual icons
+#share_facebook: false
+#share_twitter: false
+#share_googleplus: false
+#shareedin: false
+#share_digg: false
+#share_tumblr: false
+#share_reddit: false
+#share_stumbleupon: false
+#share_hackernews: false
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+  # share_buttons:
+  #   text:         'Share this post!'
+  #   facebook:     'Share on Facebook'
+  #   twitter:      'Share on Twitter'
+  #   googleplus:   'Share on Google+'
+  #   linkedin:     'Share on LinkedIn'
+  #   digg:         'Share on Digg'
+  #   tumblr:       'Share on Tumblr'
+  #   reddit:       'Share on Reddit'
+  #   stumbleupon:  'Share on StumbleUpon'
+  #   hackernews:   'Share on Hacker News'
+  # post:
+  #   updated:        'Updated'
+  #   minute_read:    'minute read'
+  #   related_posts:  'Related Posts'
+  # index:
+  #   coming_soon: 'Coming soon...'
+  # contact:
+  #   email:    'Email Address'
+  #   content:  'What would you like to say?'
+  #   subject:  'New submission!'
+  #   submit:   'Say Hello'
+  #   ajax:
+  #     sending:  'sending..'
+  #     sent:     'Message sent!'
+  #     error:    'Error!'
+  # thanks: 'Thanks for contacting us. We will reply as soon as possible.'
+  # og_locale: 'en_US'
+
+# Build settings
+markdown:     kramdown
+highlighter: rouge
+redcarpet:
+  extensions: ['smart', 'tables', 'with_toc_data']
+permalink:    pretty
+paginate:     4
+sass:
+  style: compressed
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+# https://github.com/jekyll/jekyll/issues/2938
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor

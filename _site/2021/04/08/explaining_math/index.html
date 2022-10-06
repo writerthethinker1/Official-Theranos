@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Colours & Canceling Expressions &#8211; Sample Course</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cool ways mathjax has to make illustrating concepts easier!">
+    <meta name="robots" content="all">
+    <meta name="author" content="Ramneek Narayan">
+    <!--  -->
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:4000/relax_write/2021/04/08/explaining_math/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sample Course" href="/relax_write/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/relax_write/css/pixyll.css?202206152259" type="text/css">
+
+    <!-- Fonts -->
+    <!--  -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    <!--  -->
+    <!--  -->
+
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/relax_write//favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/relax_write//favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/relax_write//favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/relax_write//favicon_io/site.webmanifest">
+
+    <!-- Verifications -->
+    <!-- 
+     -->
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <!-- <meta property="og:locale" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Colours &amp; Canceling Expressions">
+    <meta property="og:description" content="a site about relaxing 101, how to do it well so you can do better later.">
+    <meta property="og:url" content="http://localhost:4000/2021/04/08/explaining_math/">
+    <meta property="og:site_name" content="Sample Course">
+     -->
+
+    <!-- Twitter Card -->
+    <!-- <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:title" content="Colours & Canceling Expressions" />
+    <meta name="twitter:description" content="Cool ways mathjax has to make illustrating concepts easier!" />
+    <meta name="twitter:url" content="http://localhost:4000/2021/04/08/explaining_math/" />
+     -->
+
+    <!--  -->
+</head>
+
+<body class="site">
+  
+	
+
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000//relax_write/" class="site-title" style="font-size:28px">Sample Course</a>
+
+      <!-- <div style="margin-left:40%; margin-bottom:-40%">title</div> -->
+
+      <nav class="site-nav">
+        <!-- all the links for the top right of the homepage -->
+
+
+<!-- check the home_links.yml to add more if you'd like... -->
+
+
+  <a href="/relax_write//materials/" style="font-size:18px">Materials</a>
+
+  <a href="/relax_write//tags/" style="font-size:18px">Tags</a>
+
+  <a href="/relax_write//about/" style="font-size:18px">About</a>
+
+  <a href="/relax_write//contact/" style="font-size:18px">Mail</a>
+
+
+        <!-- this navigation.html has al the links for your endeavour -->
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <!-- 
+ -->
+
+<div class="post-header mb2">
+  <h1>Colours & Canceling Expressions</h1>
+  <span class="post-meta">Apr 8, 2021</span>
+  
+  <span>
+  
+    
+    </span>
+  <span class="post-meta small">
+  <!-- 
+    4 
+   -->
+  </span>
+</div>
+<article class="post-content">
+  <div>
+    <span>
+    
+<hr> <h2>Table of Contents!</h2>
+<ul><li><a href="#coloring-math">Coloring Math</a></li><li><a href="#strikeout-math">Strikeout Math</a></li><li><a href="#putting-them-both-together">Putting them both together</a></li><li><a href="#wrapping-up">Wrapping up</a></li></ul><hr>
+
+
+
+  <p>Just some ways to make math easier to explain and show others as well. This page focuses on coloring math as well as striking out terms in equations to make it easier to explain steps in problems.</p>
+
+<h3 id="coloring-math">Coloring Math</h3>
+
+<p>Sometimes when an equation is complex and difficult to explain, adding custom colors via the <code class="language-plaintext highlighter-rouge">colors</code> feature in mathjax helps. It’s easy to color math with the <code class="language-plaintext highlighter-rouge">\color{..}{..}</code> or <code class="language-plaintext highlighter-rouge">{\color{..} text}</code> macro providing the color and the expression to color. Note that <code class="language-plaintext highlighter-rouge">{\color{..} text}</code> is a safer method that doesn’t allow for colors to be put outside of the braces for operators like addition and subtraction. The standard colors, like <code class="language-plaintext highlighter-rouge">green</code>, <code class="language-plaintext highlighter-rouge">blue</code>, <code class="language-plaintext highlighter-rouge">orange</code>, <code class="language-plaintext highlighter-rouge">yellow</code>, and so on are there. To save you time and energy, the basic colors <code class="language-plaintext highlighter-rouge">orange, blue, brown, green, pink, purple, red, gray, and black</code> have all been made macros, so to write anything in orange with in math mode, just type <code class="language-plaintext highlighter-rouge">\orange{..}</code> and it will appear so. Same with all the other colors. Additional ones without macros are given below:</p>
+
+<p><img src="/relax_write/images/colours/mathjax_colors.jpg" alt="mathjax colors" /></p>
+
+<p>We can make $\color{BurntOrange}{x^2}$ from <code class="language-plaintext highlighter-rouge">\color{BurntOrange}{x^2}</code>. For example, were one to have something like</p>
+
+\[\pmatrix{\al_{11} &amp; \al_{12} &amp; \al_{13} \\
+          \al_{21} &amp; \al_{22} &amp; \al_{23} \\
+          \al_{31} &amp; \al_{32} &amp; \al_{33}}\]
+
+<p>explaining the various vectors in the column spaces via colors can help. Let’s make them all orange, blue, and black:</p>
+
+\[\pmatrix{\orange{\al_{11}} &amp; \blue{\al_{12}} &amp; \al_{13} \\
+          \orange{\al_{21}} &amp; \blue{\al_{22}} &amp; \al_{23} \\
+          \orange{\al_{31}} &amp; \blue{\al_{32}} &amp; \al_{33}}\]
+
+<p>the latex for used <code class="language-plaintext highlighter-rouge">\orange{\al_{11}}</code> for the first column, <code class="language-plaintext highlighter-rouge">\blue{\al_{12}}</code> for the second and so on. Now, if you want to explain the vectors in the column space, you can just reference the color. Or if you want to write in terms of colors you can also just reference the color as in <em>“the orange numbers make up the first vector this matrix has in it’s column space”</em> and this can make explaining easy. And, it can also make referencing the vectors themselves for vectors as in $\orange{\vec{v}_1}$, $\blue{\vec{v}_2}$, and $\vec{v}_3$. Then you might write things as in</p>
+
+\[\orange{\vec{v}_1 = \pmatrix{\al_{11} \\ \al_{21} \\ \al_{31}}} \ \ \
+\blue{\vec{v}_2 = \pmatrix{\al_{21} \\ \al_{22} \\ \al_{32}}} \ \ \
+\color{black}{\vec{v}_3 = \pmatrix{\al_{31} \\ \al_{32} \\ \al_{33}}}\]
+
+<p>Just as an aid to demonstration. You can also use colors to point out certain things in formulas like the discriminant in the quadratic formula</p>
+
+\[x = \frac{-b \pm \sqrt{\green{b^2 - 4ac}}}{2a}\]
+
+<p>just to make things more clear. Or even in the upper and lower limits of integration:</p>
+
+\[\int_{\orange{0}}^{\blue{1}} x^{7} dx = \frac{x^{8}}{8}\bigup_{\orange{0}}^{\blue{1}} = \blue{\frac{1}{8}} - \orange{\frac{0}{8}}\]
+
+<p>or $\P{\color{purple}{\text{purple}}} = 0.3$ for a nice way to show color relation. As another example, if you want to highlight two different random varables have different distributions as in $X_1 \sim \orange{\N(0,1)}$ and $X_2 \sim \blue{\pois(5)}$ we can write the sum as ${\orange{X_1}} + \blue{X_2}$. Also for explaining…</p>
+
+\[f({\green{x}}) = \bel{\green{x^2} + \color{black}{\pi} {\green{x}} + 8}{\text{input colored}}\]
+
+<p>Great for trig as well…</p>
+
+\[\sin({\orange x} + {\blue y}) = \sin({\orange x})\cos({\blue y}) + \sin({\blue y})\cos({\orange x})\]
+
+<p>by seeing the colors change you can see the angles have changed or permuted. Linear systems work as well…</p>
+
+\[\begin{cases}
+\orange{3x} + \blue{5y} = 4 \\
+\orange{-2x} + \blue{4y} = 2
+\end{cases}\]
+
+\[\impl \orange{x} + \blue{9y} = 6 \impl \orange{x} = 6 - \blue{9y}\]
+
+<hr />
+
+<p><strong>Note:</strong> You can use colors in mhchem as well as physics too!</p>
+
+\[\ce{\blue{\ce{H2O}} &lt;=&gt; H2 + \gray{\ce{O2}}} \\
+\green{\curl} f(x, y, z) = \vec{g}(x,y,z)\]
+
+<p>with the code as</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\ce{\blue{\ce{H2O}} &lt;=&gt; H2 + \gray{\ce{O2}}} \\
+\green{\curl} f(x, y, z) = \vec{g}(x,y,z)
+</code></pre></div></div>
+
+<p>just make sure to wrap inside the color for mhchem the <code class="language-plaintext highlighter-rouge">\ce{..}</code> again.</p>
+
+<hr />
+
+<h3 id="strikeout-math">Strikeout Math</h3>
+
+<p>You can also strike out or cancel difficult parts in a computation to illustrate the way to solve things as well using the <code class="language-plaintext highlighter-rouge">\cancel{..}</code> macro. An example use is $\cancel{f(x,y)_3}$ using latex <code class="language-plaintext highlighter-rouge">\cancel{f(x,y)_3}</code>. One use might be with lengthy equations:</p>
+
+\[\cancel{y''} + y' + \cancel{x^2} = \cancel{x^2} + y''' + \cancel{y''} \\
+ \impl y' = y'''\]
+
+<p>or maybe</p>
+
+\[\frac{\cancel{x^6}\cancel{y^7}\cancel{z^8}}{\cancel{x}\cancel{y}\cancel{z}} = x^5 y^6 z^7\]
+
+\[\frac{10 \cdot 20 \cdot 50}{200} = \frac{10 \cdot 20 \cdot 50}{50 \cdot 4} = \frac{10 \cdot 20 \cdot \cancel{50}}{\cancel{50} \cdot 4} = \frac{10 \cdot \cancel{4} \cdot 5}{\cancel{4}} = 50\]
+
+<p>If you want to show an arithmetic formula demonstration as “the answer was … and using the forms of the inputs we arrive at …”.</p>
+
+<p>Sometimes even with probability statements</p>
+
+\[\P{X + \cos(Y) = X - 1} = \P{\cancel{X} + \cos(Y) = \cancel{X} -1} \\ = \P{\cos(Y) = -1}\]
+
+<hr />
+
+<h3 id="putting-them-both-together">Putting them both together</h3>
+
+<p>You can add color and striking out as well for more clarity. The way to do so is given by the form <code class="language-plaintext highlighter-rouge">\color{\cancel{..}}</code> or <code class="language-plaintext highlighter-rouge">{\color{..} \cancel{..}}</code> which just means wrapping the <code class="language-plaintext highlighter-rouge">\cancel{..}</code> macro inside the <code class="language-plaintext highlighter-rouge">\color{..}</code> macro. You can have statements like (separating the parts we need and what we have known: green is unknown and orange is known):</p>
+
+\[{\orange{\cancel{x^2}}} = {\orange{\cancel{x^2}}} + \orange{y^3} + \green{c^2} \\
+\impl \green{c} = \orange{y^3} + \green{c^2} \impl \green{c - c^2} = \orange{y^3}\]
+
+<hr />
+
+<h3 id="wrapping-up">Wrapping up</h3>
+
+<p>That concludes how to color and cancel math equations and expressions. It’s as easy as possible with the macros. Happy math coloring as well explaining well!</p>
+
+  </span>
+  </div>
+</article>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+ -->
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">GitHub</a>. <br>
+      Slightly redone by <a href="https://github.com/writerthethinker1">writerthethinker1</a>. Enjoy!
+    </small>
+  </div>
+</footer>
+<!--  -->
+
+</body>
+
+<!--math support-->
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   extensions: ["tex2jax.js", "[Contrib]/mhchem/mhchem.js", "[Contrib]/physics/physics.js", "[Contrib]/siunitx/siunitx.js", "[MathJax]/extensions/TeX/cancel.js", "[MathJax]/extensions/TeX/color.js", "https://writerthethinker1.github.io/relax_write/mathjax/stats.js"],
+   tex2jax: {
+     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+     displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+     processEscapes: true
+   },
+   CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+   SVG: { linebreaks: { automatic: true } },
+   TeX: { equationNumbers: { autoNumber: "AMS" },
+           Macros: { //any extra here...
+                      }}
+ });
+</script>
+<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</html>

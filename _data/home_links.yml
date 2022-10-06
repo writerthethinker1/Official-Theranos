@@ -1,0 +1,16 @@
+home_links_list_title: 'Home Links'
+structure:
+
+# note don't prepend {{ site.baseurl }} as it makes links not work
+
+- title: 'Materials'
+  url: 'materials/'
+
+- title: 'Tags'
+  url: 'tags/'
+
+- title: 'About'
+  url: 'about/'
+
+- title: 'Mail'
+  url: 'contact/'

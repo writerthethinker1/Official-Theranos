@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Math & Physics Macros &#8211; Sample Course</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Just some math and physics macros!">
+    <meta name="robots" content="all">
+    <meta name="author" content="Ramneek Narayan">
+    <!--  -->
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:4000/relax_write/2021/04/04/physics_macros/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sample Course" href="/relax_write/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/relax_write/css/pixyll.css?202206152259" type="text/css">
+
+    <!-- Fonts -->
+    <!--  -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    <!--  -->
+    <!--  -->
+
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/relax_write//favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/relax_write//favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/relax_write//favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/relax_write//favicon_io/site.webmanifest">
+
+    <!-- Verifications -->
+    <!-- 
+     -->
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <!-- <meta property="og:locale" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Math &amp; Physics Macros">
+    <meta property="og:description" content="a site about relaxing 101, how to do it well so you can do better later.">
+    <meta property="og:url" content="http://localhost:4000/2021/04/04/physics_macros/">
+    <meta property="og:site_name" content="Sample Course">
+     -->
+
+    <!-- Twitter Card -->
+    <!-- <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:title" content="Math & Physics Macros" />
+    <meta name="twitter:description" content="Just some math and physics macros!" />
+    <meta name="twitter:url" content="http://localhost:4000/2021/04/04/physics_macros/" />
+     -->
+
+    <!--  -->
+</head>
+
+<body class="site">
+  
+	
+
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000//relax_write/" class="site-title" style="font-size:28px">Sample Course</a>
+
+      <!-- <div style="margin-left:40%; margin-bottom:-40%">title</div> -->
+
+      <nav class="site-nav">
+        <!-- all the links for the top right of the homepage -->
+
+
+<!-- check the home_links.yml to add more if you'd like... -->
+
+
+  <a href="/relax_write//materials/" style="font-size:18px">Materials</a>
+
+  <a href="/relax_write//tags/" style="font-size:18px">Tags</a>
+
+  <a href="/relax_write//about/" style="font-size:18px">About</a>
+
+  <a href="/relax_write//contact/" style="font-size:18px">Mail</a>
+
+
+        <!-- this navigation.html has al the links for your endeavour -->
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <!-- 
+ -->
+
+<div class="post-header mb2">
+  <h1>Math & Physics Macros</h1>
+  <span class="post-meta">Apr 4, 2021</span>
+  
+  <span>
+  
+    
+    </span>
+  <span class="post-meta small">
+  <!-- 
+    5 
+   -->
+  </span>
+</div>
+<article class="post-content">
+  <div>
+    <span>
+    
+<hr> <h2>Table of Contents!</h2>
+<ul><li><a href="#item-wrapping">Item wrapping</a></li><li><a href="#orders--integrals">Orders &amp; Integrals</a></li><li><a href="#vectors">Vectors</a></li><li><a href="#bra-ket-vectors">Bra-Ket Vectors</a></li><li><a href="#gradients-and-calculus-things">Gradients and Calculus Things</a></li><li><a href="#sets-and-things">Sets and Things</a></li><li><a href="#greek-letters">Greek Letters</a></li></ul><hr>
+
+
+
+  <h3 id="item-wrapping">Item wrapping</h3>
+
+<p>If you’re interested in wrapping items in parenthesis, no matter how big, use the <code class="language-plaintext highlighter-rouge">\pqty{..}</code> macro to do so. For example,</p>
+
+\[\pqty{\int_{0}^{1} e^{-x/2a}dx}\]
+
+<p>it wraps the largest one for the given expression you have. The same effect happens for brackets as well using <code class="language-plaintext highlighter-rouge">\bqty{..}</code>, bars for <code class="language-plaintext highlighter-rouge">\abs{..}</code> and double bars for <code class="language-plaintext highlighter-rouge">\norms{..}</code> all of which is given below respectively:</p>
+
+\[\bqty{\sum x^6 + 3} \ \  \ \ % a quantity in brakets
+\abs{\int 3x^2y} \ \  \ \ % a quantity in vertical bars
+\norm{\int 23} \ \ % a norm ||a||\]
+
+<h3 id="orders--integrals">Orders &amp; Integrals</h3>
+
+<p>When evaluating things like integrals, just use the <code class="language-plaintext highlighter-rouge">\evl^{..}_{..}</code> macro to make the upper and lower limits shown:</p>
+
+\[\frac{1}{2x}\evl_{\infty}^{0.9}\]
+
+<p>If you want to write the order of magnitude of something for example “the order of 30 is $\order{30}$” the <code class="language-plaintext highlighter-rouge">\order{..}</code> macro gives the way to typeset it.</p>
+
+<h3 id="vectors">Vectors</h3>
+
+<p>For various types of vectors, there are many commands. For a simple bolded vector (or symbol in general) use <code class="language-plaintext highlighter-rouge">\vb{..}</code> to make it bold as in $\vb{a}$ or $\vb{\alpha}$. If you want an arrow above it use <code class="language-plaintext highlighter-rouge">\va{..}</code> macro to give $\va{a}$ or $\va{\alpha}$ and if you want a hat above your symbol, use <code class="language-plaintext highlighter-rouge">\vu{..}</code> to give things like $\vu{w}$. For basic vector operations like dot product and cross product to give things like $\va{a} \vdot \va{b}$ or $\va{e} \cp \va{i}$, use <code class="language-plaintext highlighter-rouge">\vdot</code> and <code class="language-plaintext highlighter-rouge">\cp</code> respectively.</p>
+
+<h3 id="bra-ket-vectors">Bra-Ket Vectors</h3>
+
+<p>If you need to use these vectors, then <code class="language-plaintext highlighter-rouge">\ket{..}</code> gives $\ket{\phi}$, <code class="language-plaintext highlighter-rouge">\bra{..}</code> gives $\bra{\psi}$, <code class="language-plaintext highlighter-rouge">\braket{..}{..}</code> gives $\braket{\alpha}{\beta}$, <code class="language-plaintext highlighter-rouge">\ketbra{..}{..}</code> gives $\ketbra{\gamma}{\omega}$, <code class="language-plaintext highlighter-rouge">\ev{..}</code> gives $\ev{\beta}$, and <code class="language-plaintext highlighter-rouge">\mel{..}{..}{..}</code> for matricies with those vectors to give $\mel{\ze}{A}{\be}$.</p>
+
+<h3 id="gradients-and-calculus-things">Gradients and Calculus Things</h3>
+
+<p>For things like gradients and other calculus things, use <code class="language-plaintext highlighter-rouge">\grad</code> to yield $\grad$, <code class="language-plaintext highlighter-rouge">\div</code> to yield $\div$, <code class="language-plaintext highlighter-rouge">\curl</code> to yield $\curl$, <code class="language-plaintext highlighter-rouge">\laplacian</code> to yield $\laplacian$. If you’re doing matrix operations, you can use <code class="language-plaintext highlighter-rouge">\tr</code> for $\tr$, <code class="language-plaintext highlighter-rouge">\Tr</code> for $\Tr$, <code class="language-plaintext highlighter-rouge">\rank</code> for $\rank$, and <code class="language-plaintext highlighter-rouge">\erf</code> for $\erf$. If you want to add a functional variation, you can use <code class="language-plaintext highlighter-rouge">\var..</code> to yield $\var f(x)$. For derivatives, you can use <code class="language-plaintext highlighter-rouge">\dv{..}{..}</code>, <code class="language-plaintext highlighter-rouge">\pdv{..}{..}</code>, and <code class="language-plaintext highlighter-rouge">\fdv{..}{..}</code> to get respectively</p>
+
+\[\dv{x}{y} \ \ \pdv{f(x,y)}{y} \ \ \fdv{w}{x}\]
+
+<p>If you have more than one derivative taken, you can use the multi-derivative macro known as <code class="language-plaintext highlighter-rouge">\mdv{..}{..}{..}</code>, <code class="language-plaintext highlighter-rouge">\mpdv{..}{..}{..}</code>, and <code class="language-plaintext highlighter-rouge">\mfdv{..}{..}{..}</code> to get</p>
+
+\[\mdv{4}{x}{y} \ \ \mpdv{4}{f(x,u)}{u} \ \ \mfdv{9}{x}{y}\]
+
+<p><strong>Note: the mult-derivative macros given here are custom for the site, the physics package has other notation, but won’t load for this site.</strong></p>
+
+<p>For things like residues of complex functions you can use <code class="language-plaintext highlighter-rouge">\Res</code> to get $\Res$, <code class="language-plaintext highlighter-rouge">\pv</code> or <code class="language-plaintext highlighter-rouge">\PV</code> for the Cauchy Principle Value to get $\pv$ or $\PV$ respectively. For the real or imaginaary parts of numbers you can use <code class="language-plaintext highlighter-rouge">\Re{..}</code> ot <code class="language-plaintext highlighter-rouge">\Im{..}</code> to get $\Re{f(x + yi)}$ and $\Im{q(r + iu)}$. If you have things like in-line text or cases, you can have <code class="language-plaintext highlighter-rouge">\qq{..}</code> for a quick quad text arguments as in</p>
+
+\[f(x,y) = \begin{cases}
+x^2 &amp; \qq{early} \\
+\sin(x) &amp; \qq{afternoon} \\
+\cos(y) &amp; \qq{evening}
+\end{cases}\]
+
+<p>For other things like logical phrases and complex conjugates we have other <code class="language-plaintext highlighter-rouge">\q...</code> macros all given below (check the .md file for the way to write them):</p>
+
+\[\qc \ \ \qcc \qif \ \ \qthen \ \ \qelse \ \ \qotherwise \ \ \qunless \ \ \\ \qgiven \ \ \qusing \ \ \qassume \ \ \qsince \ \ \qlet \ \ \qfor \ \ \qall \ \ \qeven \ \ \\ \qodd \ \ \qinteger \ \ \qand \ \ \qor \ \ \qas \ \ \qin\]
+
+<h3 id="sets-and-things">Sets and Things</h3>
+
+<p>If you want to write a set use the <code class="language-plaintext highlighter-rouge">\set{..}</code> macro to give things like $\set{1, 4, 2}$ and if you want to join or find the intersection of the sets, then use the <code class="language-plaintext highlighter-rouge">\sor</code> and <code class="language-plaintext highlighter-rouge">\sand</code> macros to give respectively $\sor$ and $\sand$. These are also useful for anti-commutators too! For the opening and ending of a set, you can also use <code class="language-plaintext highlighter-rouge">\lset</code> and <code class="language-plaintext highlighter-rouge">\rset</code> to have the opening and closing of set respectively: $\lset$ and $\rset$. and If you want to talk about a set’s cardinality, you can have <code class="language-plaintext highlighter-rouge">\card{..}</code> to give $\card{A} = 4$. For things like minimum and maximum, you can use the <code class="language-plaintext highlighter-rouge">\mn{..}</code> and <code class="language-plaintext highlighter-rouge">\mx{..}</code> macros to yield $\mn{g(x)}$ and $\mx{y(s)}$ respectively. If you have domains or constraints, they can be subscripts like <code class="language-plaintext highlighter-rouge">\mn{..}_{..}</code> for $\mn{x(y)}_D$ over domain $D$. For the logical operation ‘implies’, you can use <code class="language-plaintext highlighter-rouge">\impl</code> as a macro for <code class="language-plaintext highlighter-rouge">\Rightarrow</code> that gives $\impl$. If you like writing definitions symbolically, there is also a <code class="language-plaintext highlighter-rouge">\as</code> macro that gives $\as$. Writing out a definition is more like $A \as \set{1, 3, 5}$ (see the .md file to see how it flows).</p>
+
+<p>If you want to write a sum easily you can use the <code class="language-plaintext highlighter-rouge">\sum{..}{..}{..}</code> macro to indicate the variable, starting index, and ending index. It’s used to write the formula below:</p>
+
+\[\bs{x}{1}{\infty} \frac{1}{x} = \infty\]
+
+<p>Also, if you want to write below any formula you have, you can use the <code class="language-plaintext highlighter-rouge">\bel{..}{..}</code> to indicate what you want the formula to be as well as what you want underneath it. For example if we wanted to label the sum as a series, we can have:</p>
+
+\[\bel{\bs{x}{1}{\infty} \frac{1}{x}}{\text{series}} = \infty\]
+
+<p>For the sets commonly used in mathematics to indicate numbers, we have <code class="language-plaintext highlighter-rouge">\R</code>, <code class="language-plaintext highlighter-rouge">\Nat</code>, <code class="language-plaintext highlighter-rouge">\S</code>, <code class="language-plaintext highlighter-rouge">\O</code>, <code class="language-plaintext highlighter-rouge">\Q</code>, <code class="language-plaintext highlighter-rouge">\C</code>, <code class="language-plaintext highlighter-rouge">\H</code>, <code class="language-plaintext highlighter-rouge">\Z</code>. Given below for your convenience.</p>
+
+\[\R \ \ \Nat \ \ \S \ \ \O \ \ \Q \ \ \C \ \ \H \ \ \Z\]
+
+<h3 id="greek-letters">Greek Letters</h3>
+
+<p>Greek letters that have been simplified in macro length are all given here. They have, in macro form 2-3 characters, for example <code class="language-plaintext highlighter-rouge">\alpha</code> is now <code class="language-plaintext highlighter-rouge">\al</code> and gives $\al$. They are all given below (check the .md file for this page for the ways to write them)…</p>
+
+\[\al \ \ %alpha
+\be \ \ %beta
+\ga \ \ %gamma
+\de \ \ %delta
+\ep \ \ %epsilon
+\ze \ \ %zeta
+\ta \ \ %theta
+\io \ \ %iota
+\kap \ \ %kappa
+\lam \ \ %lambda
+\omc \ \ %omicron
+\ups \ \ %upsilon
+\om \ \ %omega
+\sig \ \ %sigma
+\Ga \ \ %Gamma
+\De \ \ %Delta
+\Ta \ \ %Theta
+\Lam \ \ %Lambda
+\Ups \ \ %Upsilon
+\Om \ \ %Omega
+\Sig %Sigma\]
+
+<p>That’s about if for the math and physics related vectors given here! Enjoy the day and have a positive outlook on things.</p>
+
+  </span>
+  </div>
+</article>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+ -->
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">GitHub</a>. <br>
+      Slightly redone by <a href="https://github.com/writerthethinker1">writerthethinker1</a>. Enjoy!
+    </small>
+  </div>
+</footer>
+<!--  -->
+
+</body>
+
+<!--math support-->
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   extensions: ["tex2jax.js", "[Contrib]/mhchem/mhchem.js", "[Contrib]/physics/physics.js", "[Contrib]/siunitx/siunitx.js", "[MathJax]/extensions/TeX/cancel.js", "[MathJax]/extensions/TeX/color.js", "https://writerthethinker1.github.io/relax_write/mathjax/stats.js"],
+   tex2jax: {
+     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+     displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+     processEscapes: true
+   },
+   CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+   SVG: { linebreaks: { automatic: true } },
+   TeX: { equationNumbers: { autoNumber: "AMS" },
+           Macros: { //any extra here...
+                      }}
+ });
+</script>
+<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</html>

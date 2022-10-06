@@ -1,0 +1,8 @@
+<!-- all the links for the top right of the homepage -->
+
+
+<!-- check the home_links.yml to add more if you'd like... -->
+
+{% for item in site.data.home_links.structure %}
+  <a href="{{ site.baseurl }}/{{ item.url }}" style="font-size:18px">{{ item.title }}</a>
+{% endfor %}

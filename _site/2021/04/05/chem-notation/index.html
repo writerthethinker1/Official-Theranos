@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chemistry Notation Latex &#8211; Sample Course</title>
+    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Notes for chemistry notation, also links for later reference...">
+    <meta name="robots" content="all">
+    <meta name="author" content="Ramneek Narayan">
+    <!--  -->
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:4000/relax_write/2021/04/05/chem-notation/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for Sample Course" href="/relax_write/feed.xml" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/relax_write/css/pixyll.css?202206152259" type="text/css">
+
+    <!-- Fonts -->
+    <!--  -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    <!--  -->
+    <!--  -->
+
+    <!-- favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/relax_write//favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/relax_write//favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/relax_write//favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/relax_write//favicon_io/site.webmanifest">
+
+    <!-- Verifications -->
+    <!-- 
+     -->
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <!-- <meta property="og:locale" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Chemistry Notation Latex">
+    <meta property="og:description" content="a site about relaxing 101, how to do it well so you can do better later.">
+    <meta property="og:url" content="http://localhost:4000/2021/04/05/chem-notation/">
+    <meta property="og:site_name" content="Sample Course">
+     -->
+
+    <!-- Twitter Card -->
+    <!-- <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:title" content="Chemistry Notation Latex" />
+    <meta name="twitter:description" content="Notes for chemistry notation, also links for later reference..." />
+    <meta name="twitter:url" content="http://localhost:4000/2021/04/05/chem-notation/" />
+     -->
+
+    <!--  -->
+</head>
+
+<body class="site">
+  
+	
+
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://localhost:4000//relax_write/" class="site-title" style="font-size:28px">Sample Course</a>
+
+      <!-- <div style="margin-left:40%; margin-bottom:-40%">title</div> -->
+
+      <nav class="site-nav">
+        <!-- all the links for the top right of the homepage -->
+
+
+<!-- check the home_links.yml to add more if you'd like... -->
+
+
+  <a href="/relax_write//materials/" style="font-size:18px">Materials</a>
+
+  <a href="/relax_write//tags/" style="font-size:18px">Tags</a>
+
+  <a href="/relax_write//about/" style="font-size:18px">About</a>
+
+  <a href="/relax_write//contact/" style="font-size:18px">Mail</a>
+
+
+        <!-- this navigation.html has al the links for your endeavour -->
+      </nav>
+      <div class="clearfix"></div>
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        <!-- 
+ -->
+
+<div class="post-header mb2">
+  <h1>Chemistry Notation Latex</h1>
+  <span class="post-meta">Apr 5, 2021</span>
+  
+  <span>
+  
+    
+    </span>
+  <span class="post-meta small">
+  <!-- 
+    13 
+   -->
+  </span>
+</div>
+<article class="post-content">
+  <div>
+    <span>
+    
+<hr> <h2>Table of Contents!</h2>
+<ul><li><a href="#the-basics">The basics</a></li><li><a href="#greek-letters">Greek Letters</a></li><li><a href="#isotopes">Isotopes</a></li><li><a href="#arrows">Arrows</a><ul><li><a href="#upwards-and-downwards-eg-precipitatesgases">Upwards and Downwards (e.g. precipitates/gases)</a></li></ul></li><li><a href="#putting-it-all-together">Putting it all together</a></li><li><a href="#special-formatting">Special Formatting</a><ul><li><a href="#states-of-aggregationcrystal-systems">States of Aggregation/Crystal Systems</a></li><li><a href="#more-formatting-oxid-statesadd-compoundsunpaired-electrons">More formatting (oxid. states/add compounds/unpaired electrons)</a></li></ul></li><li><a href="#chemical-bonds">Chemical Bonds</a></li><li><a href="#units">Units</a></li><li><a href="#wrapping-up">Wrapping up</a></li></ul><hr>
+
+
+
+  <p>We also have chemistry notation via <em>mhchem</em> for writing various chemical equations. A full illustration of the various types of equations you can make are given in <a href="https://mhchem.github.io/MathJax-mhchem/">this</a> page. Read it if you are stuck or need more references for the types of things you want to write. We’ll be going over the basics to writing chemistry equations.</p>
+
+<p><strong>Note: diagrams like chemical bonds and molecules (e.g. benzine rings) are not possible to make, but rendering them in latex, saving them as a picture and putting it in your page as one via <code class="language-plaintext highlighter-rouge">![..](..)</code> can also work.</strong></p>
+
+<h3 id="the-basics">The basics</h3>
+
+<p>To write any chemical equation (reactions, isotopes, formulas ($\ce{H2O}$)) always use two dollar signs to indicate you want to write using latex inline <code class="language-plaintext highlighter-rouge">$..$</code> or have 4 dollar signs for display math, one on top and one on bottom:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+.. % put that cool equation here!!
+$$
+</code></pre></div></div>
+
+<p>The part with the <code class="language-plaintext highlighter-rouge">..</code> is where you can put the latex code for the chemical equation. For a chemical equation, use the <code class="language-plaintext highlighter-rouge">\ce{..}</code> macro to indicate you want to write one. Many chemical formulas come with subscripts and superscripts and are detected for you so for a formula you just have to write the atomic formula and number of them in the chemical formula, for example writing water we type out <code class="language-plaintext highlighter-rouge">$\ce{H2O}$</code> to have $\ce{H2O}$. And to write $\ce{Sb2O3}$ we just type <code class="language-plaintext highlighter-rouge">$\ce{Sb2O3}$</code>. In display math this would look like</p>
+
+\[\ce{Sb2O3}\]
+
+<p>and we had to write</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+\ce{Sb2O3}
+$$
+</code></pre></div></div>
+
+<p>to have it render. <em>Display math gives your formula it’s own line if it’s complex or something really large for viewing.</em></p>
+
+<p>If your formula has a charge associated with it, you can use the <code class="language-plaintext highlighter-rouge">^</code> symbol to indicate a superscript for that charge as in <code class="language-plaintext highlighter-rouge">\ce{CrO4^2-}</code> for $\ce{CrO4^2-}$. For a single charge we don’t have to include a superscript mark <code class="language-plaintext highlighter-rouge">^</code>, but for more than one such as <code class="language-plaintext highlighter-rouge">2-</code> earlier or even <code class="language-plaintext highlighter-rouge">3+</code>, we have to include it to avoid rendering errors. For example, in the formula $\ce{Na+}$, all we had to type was <code class="language-plaintext highlighter-rouge">\ce{Na+}</code> but if somehow sodium had more charges, we can’t do <code class="language-plaintext highlighter-rouge">\ce{Na3+}</code> because it gives $\ce{Na3+}$, instead we have to write <code class="language-plaintext highlighter-rouge">\ce{Na^3+}</code> for $\ce{Na^3+}$. Charges can be placed in between the formula as well as in $\ce{Na^+Cl^-}$ using <code class="language-plaintext highlighter-rouge">\ce{Na^+Cl^-}</code>. All hypothetical, but it’s there if you want to.</p>
+
+<p><strong>All numbers placed after the elements are subscripts by default, so the superscript changes this.</strong></p>
+
+<p>If you want to add the amount of the compound as a note, you can just add the number next to the name, just make sure that if it’s fractional you either close it in <code class="language-plaintext highlighter-rouge">()</code> or leave space for it. For example, to typeset $\ce{1/2 H2O}$ we write <code class="language-plaintext highlighter-rouge">\ce{1/2 H2O}</code> and to leave it as $\ce{(1/2) H2O}$ write <code class="language-plaintext highlighter-rouge">\ce{(1/2) H2O}</code>. Things like <code class="language-plaintext highlighter-rouge">()</code> and <code class="language-plaintext highlighter-rouge">[]</code> can be included in the <code class="language-plaintext highlighter-rouge">\ce</code> macro and will be rendered exactly as they are: they have no special meaning in mhchem. For example, if we wanted to write 2 negative ions for $\ce{AgCl2}$ but want to be unambiguous about the whole compound having it, then we just add parenthesis around the code to get</p>
+
+\[\ce{(AgCl2)^2-} \ \ \ce{[AgCl2]^2-}\]
+
+<p>writing as code</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+\ce{(AgCl2)^2-} \ \ \ce{[AgCl2]^2-} % '\ \ ' are just spaces to
+% spread them apart...
+$$
+</code></pre></div></div>
+
+<p>If you want subscripts after the compound then leave the number right next to the parenthesis or bracket as in <code class="language-plaintext highlighter-rouge">\ce{(AgCl2)4}</code> for $\ce{(AgCl2)4}$ same with brackets. For both sub and superscripts just include the superscript after the number using <code class="language-plaintext highlighter-rouge">(formula)[sub]^[super]</code> as in <code class="language-plaintext highlighter-rouge">\ce{(AgCl2)3^2+}</code> for $\ce{(AgCl2)3^2+}$.</p>
+
+<p><strong>Note: <code class="language-plaintext highlighter-rouge">{..}</code> preserves the characters that you put in them. It won’t auto subscript or superscript for you. So, we can have just a regular <code class="language-plaintext highlighter-rouge">+</code> or <code class="language-plaintext highlighter-rouge">-</code> or even number by using them as in, $\ce{Na{+}}$ with <code class="language-plaintext highlighter-rouge">\ce{Na{+}}</code>, $\ce{Cl{3}}$ with <code class="language-plaintext highlighter-rouge">\ce{Cl{3}}</code>, and $\ce{H{2}O}$ with <code class="language-plaintext highlighter-rouge">\ce{H{2}O}</code>.</strong></p>
+
+<h3 id="greek-letters">Greek Letters</h3>
+
+<p>You can also put greek letters for those formulas as well without having to add anything more than macros. For example, $\ce{\alpha-H^+}$ is given by <code class="language-plaintext highlighter-rouge">\ce{\alpha-H^+}</code> same with particle physics equations: $\ce{\nu_e}$ is written with <code class="language-plaintext highlighter-rouge">\ce{\nu_e}</code>. Just make sure that if you want subscripts always include a manual subscript as in <code class="language-plaintext highlighter-rouge">\ce{\letter_subscript}</code> otherwise the subscript won’t be rendered and be treated as part of the macro. Same with letters you want subscripted as in $\ce{OH_x}$ will only have a ‘x’ on the bottom if we have <code class="language-plaintext highlighter-rouge">\ce{OH_x}</code> if we have <code class="language-plaintext highlighter-rouge">\ce{OHx}</code> we get $\ce{OHx}$.</p>
+
+<h3 id="isotopes">Isotopes</h3>
+
+<p>If you want to write the isotopes of atoms, just include the super and subscript to the <em>left</em> of the atomic formula and charges to the right. You can have <code class="language-plaintext highlighter-rouge">\ce{^227_90Th+}</code> for $\ce{^227_90Th+}$ and <code class="language-plaintext highlighter-rouge">\ce{^227_90 Th^2+}</code> for $\ce{^227_90 Th^2+}$. The key bit to add before the atomic formula is <code class="language-plaintext highlighter-rouge">^{mass}_{proton number}[your atom]</code>.</p>
+
+<p>You can also put superscripts and subscripts on the right hand side as well just move the superscripts and subscripts on the right hand side. To have $\ce{Fe^22_4}$ all we had to type was <code class="language-plaintext highlighter-rouge">\ce{Fe^22_4}</code>. We could also write <code class="language-plaintext highlighter-rouge">\ce{Fe4^22}</code> and also have $\ce{Fe4^22}$, but the superscript is now for all of <code class="language-plaintext highlighter-rouge">Fe4</code> not just <code class="language-plaintext highlighter-rouge">Fe</code>. Just a careful note, <em>superscripts are global for everything before them</em>.</p>
+
+<p><em>Note: you don’t need to worry about brackets for super and subscripts, but for charges, you do. Always include them for charges. If you are unsure, put them there anyway as in, <code class="language-plaintext highlighter-rouge">\ce{H2^{+}}</code>. Numbers after formulas are automatically subscripted and superscripts need the <code class="language-plaintext highlighter-rouge">^</code> to make them appear. Generally, when you have any super or subscript you don’t have to worry about brackets so <code class="language-plaintext highlighter-rouge">\ce{^2322_23232C}</code> is $\ce{^2322_23232C}$</em></p>
+
+<h3 id="arrows">Arrows</h3>
+
+<p>If you want arrows for the reactions, there are many types and features you can to to express your point clearly and effectively to the audience. Let’s start with the basic arrow. If you wnat a basic arrow $\ce{-&gt;}$, all you have to type is <code class="language-plaintext highlighter-rouge">-&gt;</code> as in <code class="language-plaintext highlighter-rouge">\ce{-&gt;}</code>. We give a whole list of arrows below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Arrow</th>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">$\ce{-&gt;}$</td>
+      <td style="text-align: center">forward</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">-&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{&lt;-}$</td>
+      <td style="text-align: center">backward</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;-</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{&lt;-&gt;}$</td>
+      <td style="text-align: center">both directions</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;-&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{&lt;–&gt;}$</td>
+      <td style="text-align: center">equilibrium</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;--&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{&lt;=&gt;}$</td>
+      <td style="text-align: center">alt. equilibrium</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;=&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{&lt;=&gt;&gt;}$</td>
+      <td style="text-align: center">equi. top big</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">&lt;=&gt;\&gt;</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{&lt;&lt;=&gt;}$</td>
+      <td style="text-align: center">equi. bot big</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\&lt;&lt;=&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>note the character escapes <code class="language-plaintext highlighter-rouge">\&gt;</code> are only for this site, in regular latex, you might not have to use them.</li>
+</ul>
+
+<p>You can also embed text either above or below the arrow using <code class="language-plaintext highlighter-rouge">\ce{[arrow type][{top text}][{bot text}]}</code>, for example to have</p>
+
+\[\ce{&lt;=&gt;[{heat}][{cold}]}\]
+
+<p>just type <code class="language-plaintext highlighter-rouge">\ce{&lt;=&gt;[{heat}][{cold}]}</code>. The first item in the brackets <em>always goes on top of the arrow</em> and the second item in the brackets <em>always goes on bottom of the arrow</em>. You can write both words and symbols, just make sure that if you want a word use <code class="language-plaintext highlighter-rouge">{..}</code> and put the word in between <code class="language-plaintext highlighter-rouge">..</code>.</p>
+
+<p>For italic text or complex latex, you can put in latex using <code class="language-plaintext highlighter-rouge">$..$</code> or another equation using standard mhchem syntax we showed. For example, we can have</p>
+
+\[\ce{&lt;=&gt;[$x_j$][$y_{kj}$]}\]
+
+<p>using <code class="language-plaintext highlighter-rouge">\ce{&lt;=&gt;[$x_j$][$y_{kj}$]}</code> and if you want another chemical formula on the arrow, just include it in the brackets:</p>
+
+\[\ce{&lt;=&gt;[H^+][OH^-]}\]
+
+<p>all from <code class="language-plaintext highlighter-rouge">\ce{&lt;=&gt;[H^+][OH^-]}</code> <em>we don’t need any special formatting, we can use the same mhchem notation we use for compounds and ions</em>.</p>
+
+<h4 id="upwards-and-downwards-eg-precipitatesgases">Upwards and Downwards (e.g. precipitates/gases)</h4>
+
+<p>If your equation involves a precipitate or some type of process where the new compound is noticeable in position, you can have $\ce{^}$ and $\ce{v}$  via the commands <code class="language-plaintext highlighter-rouge">\ce{^}</code> and <code class="language-plaintext highlighter-rouge">\ce{v}</code>. For example, you can write</p>
+
+\[\ce{Ag+ + Cl- -&gt; AgCl v}\]
+
+<p>with <code class="language-plaintext highlighter-rouge">\ce{Ag+ + Cl- -&gt; AgCl v}</code></p>
+
+<p>If you have more than one you can add them using an extra parenthesis as in <code class="language-plaintext highlighter-rouge">(^)</code> or <code class="language-plaintext highlighter-rouge">(v)</code> or just add them for your own information to know where you put them.</p>
+
+<hr />
+
+<h3 id="putting-it-all-together">Putting it all together</h3>
+
+<p>Putting all of what we know together, we can now write</p>
+
+\[\ce{Hg^2+ -&gt;[I-][{part 1}] HgI2 -&gt;[I-][{part 2}] [Hg^{II}I4]^2-}\]
+
+<p>the latex was <code class="language-plaintext highlighter-rouge">\ce{Hg^2+ -&gt;[I-][{part 1}] HgI2 -&gt;[I-][{part 2}] [Hg^{II}I4]^2-}</code>. The subscripting was done for us and the superscripting was done via <code class="language-plaintext highlighter-rouge">^</code> and for any letters we had to subscript with braces <code class="language-plaintext highlighter-rouge">{}</code>. If we want to comment underneath we can also insert latex! using <code class="language-plaintext highlighter-rouge">\bel{..}{..}</code></p>
+
+\[\ce{Hg^2+ -&gt;[I-][{part 1}] HgI2 -&gt;[I-][{part 2}] $\bel{\ce{[Hg^{II}I4]^2-}}{\text{ion}}$}\]
+
+<p>Just make sure when you do insert latex you add <code class="language-plaintext highlighter-rouge">$..$</code> inside the <code class="language-plaintext highlighter-rouge">\ce{..}</code> macro so it looks like <code class="language-plaintext highlighter-rouge">\ce{..$\latex\ce{new compound}$}</code> once you add latex <code class="language-plaintext highlighter-rouge">$..$</code> inside the <code class="language-plaintext highlighter-rouge">\ce{..}</code> you have to mark any new chemical equations with another <code class="language-plaintext highlighter-rouge">\ce{..}</code>. The code used was <code class="language-plaintext highlighter-rouge">\ce{Hg^2+ -&gt;[I-][{part 1}] HgI2 -&gt;[I-][{part 2}]</code><strong><code class="language-plaintext highlighter-rouge">$\bel{\ce{[Hg^{II}I4]^2-}}{\text{ion}}$}</code></strong> The bolded part is where we added the latex commands and put the chemistry equation inside.</p>
+
+<ul>
+  <li>If you notice you can use all the arithmetic operations like <code class="language-plaintext highlighter-rouge">+</code>, <code class="language-plaintext highlighter-rouge">-</code>, <code class="language-plaintext highlighter-rouge">=</code>, and $\pm$ within <code class="language-plaintext highlighter-rouge">\ce{..}</code> and also whatever latex operations you wish as well! We can have $\ce{Na^+ + Cl^-}$, $\ce{9mg - 0.1mg}$, $\ce{1g $\pm$ 0.2g}$, $\ce{Ca = Ca}$ even things like $\ce{H2O $\times$ CaCl}$ using the format <code class="language-plaintext highlighter-rouge">\ce{A [operation] B}</code>. If it’s in latex, try <code class="language-plaintext highlighter-rouge">\ce{A $latex_stuff$ B}</code>.</li>
+</ul>
+
+<hr />
+
+<h3 id="special-formatting">Special Formatting</h3>
+
+<h4 id="states-of-aggregationcrystal-systems">States of Aggregation/Crystal Systems</h4>
+
+<p>For these things, you can add parenthesis as well as the state you would like to describe. Anything in <code class="language-plaintext highlighter-rouge">()</code>, <code class="language-plaintext highlighter-rouge">[]</code>, and <code class="language-plaintext highlighter-rouge">{}</code> is automatically taken as a word, spaces included. So, we can have $\ce{H2(aq)}$ with <code class="language-plaintext highlighter-rouge">\ce{H2(aq)}</code> or even $\ce{H2(aqueous with volume)}$ with <code class="language-plaintext highlighter-rouge">\ce{H2(aqueous with volume)}</code>. They can also be subscripted with <code class="language-plaintext highlighter-rouge">_</code> as well giving $\ce{Ca^+_{(aq)}}$ as in <code class="language-plaintext highlighter-rouge">\ce{Ca^+_{(aq)}}</code> just make sure to include braces when you subscript as in <code class="language-plaintext highlighter-rouge">_{(put state here...)}</code> within the parenthesis you can put many things, commas, signs as well as other things, latex too with the <code class="language-plaintext highlighter-rouge">$..$</code>. So we can have things like</p>
+
+\[\ce{ZnS($c$)} \ \ \ce{NaOH(aq,$\infty$)} \ \ \ce{ZnS(\ca$c$)}\]
+
+<p>Using <code class="language-plaintext highlighter-rouge">\ce{ZnS($c$)}</code>, <code class="language-plaintext highlighter-rouge">\ce{NaOH(aq,$\infty$)}</code>, and <code class="language-plaintext highlighter-rouge">\ce{ZnS(\ca$c$)}</code>, to make the $\ce{\ca}$ we use the macro <code class="language-plaintext highlighter-rouge">\ca</code> in <code class="language-plaintext highlighter-rouge">\ce{..}</code>.</p>
+
+<p>Note: if you ever want anything in italics, <strong>just use latex within <code class="language-plaintext highlighter-rouge">\ce{..}</code></strong> to give things like $\ce{H2^$X,…,Y$}$ for <code class="language-plaintext highlighter-rouge">\ce{H2^$X,...,Y$}</code> without latex it looks like $\ce{H2^{X,…,Y}}$ or <code class="language-plaintext highlighter-rouge">\ce{H2^{X,...,Y}}</code>. Whenever you are unsure about formatting, it’s best to include braces to give the item you want formatted a certain way to be as such, e.g. long expressions: we could have also written <code class="language-plaintext highlighter-rouge">\ce{H2^{$X,...,Y$}}</code> and it renders the same, only it’s safer. If something doesn’t look as you want, just add braces around the super and subscripts as well as anything you want a text, it might fix any errors. <strong>For math mode using the <code class="language-plaintext highlighter-rouge">$..$</code> you must include indicators <code class="language-plaintext highlighter-rouge">^</code> and <code class="language-plaintext highlighter-rouge">_</code> for a superscript and subscript.</strong></p>
+
+<h4 id="more-formatting-oxid-statesadd-compoundsunpaired-electrons">More formatting (oxid. states/add compounds/unpaired electrons)</h4>
+
+<p>For oxidation states, you can include the roman numerals in the superscripts using the braces the numbers for the compound are subscripted for you as before $\ce{Fe^{III}Fe2^{IV}O3}$ with <code class="language-plaintext highlighter-rouge">\ce{Fe^{III}Fe2^{IV}O3}</code>.</p>
+
+<p>For addition compounds all that’s extra is the ‘\*’ in between the compounds, so we write <code class="language-plaintext highlighter-rouge">\ce{KCr(SO4)2\*12H2O}</code> for $\ce{KCr(SO4)2*12H2O}$.</p>
+
+<p>The special symbol for unpaired electrons is <code class="language-plaintext highlighter-rouge">.</code> and renders as $\ce{.}$. For compounds $\ce{OCO^{.-}}$ and $\ce{NO^{(2.)-}}$ we used the same rules before and have the code <code class="language-plaintext highlighter-rouge">\ce{OCO^{.-}}</code> and <code class="language-plaintext highlighter-rouge">\ce{NO^{(2.)-}}</code>.</p>
+
+<p>For the Kröger-Vink notation, everything as before with superscripting and subscripting just make sure for really long sub or superscripts that you use braces. Looking at</p>
+
+\[\ce{Li^x_{Li,1-2x}Mg^._{Li,x}$V$'_{Li,x}Cl^x_{Cl}}\]
+
+<p>we can see the code as <code class="language-plaintext highlighter-rouge">\ce{Li^x_{Li,1-2x}Mg^._{Li,x}</code><code class="language-plaintext highlighter-rouge">$V$'_{Li,x}Cl^x_{Cl}}</code>. For long expressions like <code class="language-plaintext highlighter-rouge">Li, 1-2x</code> we had to wrap the in braces to have it render correctly, so it looks like <code class="language-plaintext highlighter-rouge">_{Li, 1-2x}</code>. Other than that, nothing too much has changed, the <code class="language-plaintext highlighter-rouge">'</code> is noted correctly and needs no special formatting and if you need any italizised formulas or letters, switch to latex as before, the <code class="language-plaintext highlighter-rouge">x</code> is rendered in the superscript in a special format just for this notation.</p>
+
+<h3 id="chemical-bonds">Chemical Bonds</h3>
+
+<p>You can insert bonds directly with limited features as in use the symbol <code class="language-plaintext highlighter-rouge">-</code> to denote 1 bond, <code class="language-plaintext highlighter-rouge">=</code> for 2 bonds, <code class="language-plaintext highlighter-rouge">#</code> for 4 bonds. These give</p>
+
+\[\ce{A-B=C#D}\]
+
+<p>with code <code class="language-plaintext highlighter-rouge">\ce{A-B=C#D}</code>. For more flexibility of bonds, like 3 or noting dashes, dots, and arrows as bonds use the <code class="language-plaintext highlighter-rouge">\bond{..}</code> macro. A table of what it does is here…</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Bond</th>
+      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Latex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{1}}$</td>
+      <td style="text-align: center">1 bond</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{1}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{2}}$</td>
+      <td style="text-align: center">2 bonds</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{2}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{3}}$</td>
+      <td style="text-align: center">3 bonds</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{3}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{#}}$</td>
+      <td style="text-align: center">4 bonds</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{#}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{~}}$</td>
+      <td style="text-align: center">dashed bond</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{~}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{~--}}$</td>
+      <td style="text-align: center">2 bonds + dash bond top</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{~-\-}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{-~-}}$</td>
+      <td style="text-align: center">2 bonds + dash bond mid.</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{-~\-}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{...}}$</td>
+      <td style="text-align: center">dotted bond</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{..\.}</code></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">$\ce{\bond{-&gt;}}$</td>
+      <td style="text-align: center">line bond</td>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">\bond{-&gt;}</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For the bond with dots, you can add up to 4 dots as you want within <code class="language-plaintext highlighter-rouge">\bond{..}</code> and that many will appear, for example $\ce{C\bond{....}O}$ has 4 dots. A safe measure is if you want more than 3 dots, just escape the 3rd one as in leave it as ‘\.’ like with <code class="language-plaintext highlighter-rouge">\bond{..\.}</code>. <strong>This is just for the blog, markdown syntax sometimes gets mixed with chemical syntax, this fixes it</strong>. The general rule of thumb is whenever you have 2 or more <code class="language-plaintext highlighter-rouge">-</code>’s or <code class="language-plaintext highlighter-rouge">.</code>’s, it’s best to escape them, all the examples in the table do this, if you’re stuck, just use those for your needs.</p>
+
+<h3 id="units">Units</h3>
+
+<p>If you want to write units in a easy way there’s the <code class="language-plaintext highlighter-rouge">\pu{..}</code>  macro. All you have to do is know the formatting. For superscripts like $\pu{mm2}$, you don’t have to include a superscript, just write <code class="language-plaintext highlighter-rouge">\pu{mm2}</code> instead, same with negative exponents like ‘-3’ to give $\pu{mm-3}$ with <code class="language-plaintext highlighter-rouge">\pu{mm-3}</code>. The unit you write is formatted exactly as you want, the lower case letters are kept as so as well as the upper case keys. Numbers too are rendered exactly as you wrote as well as spaces. So, something as $\pu{232 mm4}$ is written as <code class="language-plaintext highlighter-rouge">\pu{232 mm4}</code>. If you’re into scientific notation, you can also include them using plain syntax like <code class="language-plaintext highlighter-rouge">\pu{121e20}</code>, <code class="language-plaintext highlighter-rouge">\pu{232E231}</code> you can have $\pu{121e20}$ and $\pu{232E231}$, the lower case ‘e’ gives a dot for the product and the upper case ‘E’ gives a times for the product. To make fractions for the units as in $\pu{m/s}$ include only 1 slash giving <code class="language-plaintext highlighter-rouge">\pu{m/s}</code> and to have $\pu{m // s}$ include 2 slashes as in <code class="language-plaintext highlighter-rouge">\pu{m \\ s}</code>. If you have products like $\pu{J*s}$, you can use the ‘\*’ in between the units, the last one was made with <code class="language-plaintext highlighter-rouge">\pu{J\*s}</code>. <em>Escaping the asterisk with the backslash is for this blog, outside of it in latex, you might not have to.</em></p>
+
+<h3 id="wrapping-up">Wrapping up</h3>
+
+<p>That just about does it for the mhchem stuff. If you really practice and excel at typesetting you’ll be able to write complex chemistry equations and make your point clear. Things like</p>
+
+\[\ce{Zn^2+  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{goal 1}}{\ce{Zn(OH)2 v}}$  &lt;=&gt;[+ 2OH-][+ 2H+]  $\underset{\text{goal 2}}{\ce{[Zn(OH)4]^2-}}$}\]
+
+<p>and</p>
+
+\[\ce{$\left(\pu{0.1234E20 J // mol^3}\right)$ $\pm$ \left(\pu{0.56789 J // mol^3}\right)}\]
+
+<p>Again, all information in this page is adapted from <a href="https://mhchem.github.io/MathJax-mhchem/">here</a>, check it out too if you want a concise way to see code and example. Happy chemistry typesetting!</p>
+
+  </span>
+  </div>
+</article>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+ -->
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="center">
+  <div class="measure">
+    <small>
+      Theme crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+      &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">GitHub</a>. <br>
+      Slightly redone by <a href="https://github.com/writerthethinker1">writerthethinker1</a>. Enjoy!
+    </small>
+  </div>
+</footer>
+<!--  -->
+
+</body>
+
+<!--math support-->
+<script type="text/x-mathjax-config">
+ MathJax.Hub.Config({
+   extensions: ["tex2jax.js", "[Contrib]/mhchem/mhchem.js", "[Contrib]/physics/physics.js", "[Contrib]/siunitx/siunitx.js", "[MathJax]/extensions/TeX/cancel.js", "[MathJax]/extensions/TeX/color.js", "https://writerthethinker1.github.io/relax_write/mathjax/stats.js"],
+   tex2jax: {
+     inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+     displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+     processEscapes: true
+   },
+   CommonHTML: { linebreaks: { automatic: true } },
+  "HTML-CSS": { linebreaks: { automatic: true } },
+   SVG: { linebreaks: { automatic: true } },
+   TeX: { equationNumbers: { autoNumber: "AMS" },
+           Macros: { //any extra here...
+                      }}
+ });
+</script>
+<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+</html>
