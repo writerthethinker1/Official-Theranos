@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Contact Me
+title: "Contact (Theranos)."
 permalink: /contact/
 ---
 
 
-You can mail me at <a href="mailto:{{ site.email }}">ramneeknarayan@gmail.com</a>.
+> Weʻre still working on this part...
 
 <!-- add your email if you like... -->
 

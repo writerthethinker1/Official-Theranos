@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "TheranoXii | Materials"
+title: "TheranoXii | (Materials)"
 permalink: /TheranoXii/
 ---
 
