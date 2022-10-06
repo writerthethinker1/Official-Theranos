@@ -12,7 +12,7 @@ comments: "Here are all the files for discussions! We hope you enjoy them. We pu
 
 {{ page.comments }}
 
-<span style="color:orange">Last Update: {{ last_update }}</span>
+<!-- <span style="color:#8AAAEA">Last Update: {{ last_update }}</span> -->
 
 {% for thing in site.Theranos-discussions %}
   <div>

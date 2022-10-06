@@ -4,7 +4,7 @@ title: "TheranoXii | Materials"
 permalink: /TheranoXii/
 ---
 
-<span style="color:orange">Here are all the Theranos materials, files, links, etc...</span>
+<!-- <span style="color:#8AAAEA">Here are all the Theranos materials, files, links, etc...</span> -->
 
 ---
 

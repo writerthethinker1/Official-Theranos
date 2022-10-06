@@ -7,7 +7,7 @@ comments: "These are just my musings about this course. Personal things I've lea
 
 {{ page.comments }}
 
-<span style="color:orange">*Theranos requires musings!*</span>
+<!-- <span style="color:#8AAAEA">*Theranos requires musings!*</span> -->
 
 {% for thing in site.Theranos-musings %}
   <div>

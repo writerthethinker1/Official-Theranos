@@ -6,7 +6,7 @@ comments: "You'll find here notes for the course, all free to download and share
 
 {{ page.comments }}
 
-<span style="color:orange">Enjoy learning new things!<span>
+<!-- <span style="color:#8AAAEA">Enjoy learning new things!<span> -->
 
 <!-- feel free to customize to your liking, i just left examples of what one can do, but it's open for you! -->
 

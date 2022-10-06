@@ -4,7 +4,7 @@ title: 'Mission Statement'
 date: '2021-03-16'
 ---
 
-<span style="color:orange">Last Update: {{ page.date | date: "%b %-d, %Y" }}</span>
+<!-- <span style="color:#8AAAEA">Last Update: {{ page.date | date: "%b %-d, %Y" }}</span> -->
 
 <!-- you can put your syllabus here...just note the date you updated it last in the yml, change it accordingly year-month-day, just for rendering -->
 
